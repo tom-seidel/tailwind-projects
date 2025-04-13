@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# VSCode settings
+.vscode/
+
+# Logs
+*.log
+
+# System Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Tailwind CLI Output
+dist/
+*.css.map
