@@ -3,7 +3,8 @@
 ![HTML](https://img.shields.io/badge/Built_with-HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Styled_with-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwindcss)
 
-**A growing collection of minimal HTML + Tailwind CSS components and layouts.** This repo is my Tailwind CSS playground – focused on clarity, creativity, and clean code.  
+**A growing collection of minimal HTML + Tailwind CSS components, layouts and full sites.**
+This repo is my Tailwind CSS playground – focused on clarity, creativity, and clean code.
 Everything is kept as simple as possible: no frameworks, no build tools – just HTML and Tailwind.
 
 ## 🧱 Structure
@@ -11,13 +12,16 @@ Everything is kept as simple as possible: no frameworks, no build tools – just
 Each subfolder contains a single HTML file showcasing a Tailwind component or layout idea:
 ```
 tailwind-projects/
-├── project-00/
-│   └── index.html
-├── project-01/
-│   └── index.html
-├── project-02/
-│   └── index.html
+├── image-gallery/
+├── login-form/
+├── navigation-bar/
+├── newsletter-signup/
+├── product-card/
+├── full-sites/
+│   ├── .../
+│   └── .../
 ├── ...
+└── README.md
 ```
 No extra dependencies. No complex setups. Just focus on the utility-first magic ✨
 
