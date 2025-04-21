@@ -1,17 +1,21 @@
-# macOS
+# macOS system files
 .DS_Store
 
-# VSCode settings
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VSCode
 .vscode/
 
 # Logs
 *.log
 
-# System Files
-Thumbs.db
-ehthumbs.db
-Desktop.ini
+# Node.js dependencies
+node_modules/
 
-# Tailwind CLI Output
+# Build output
 dist/
+build/
 *.css.map
