@@ -8,57 +8,33 @@
     </head>
     <body class="bg-gray-50">
 
-        <!-- Navigation Bar Container -->
-        <nav class="flex justify-between p-4 sticky top-0 bg-blue-700">
-            <!-- Logo -->
-            <div class="text-white text-xl">Cloud Dot</div>
-
-            <!-- Hamburger Menu Icon -->
-            <div id="menu-toggle" class="flex sm:hidden">
-                <button class="text-white focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><path d="M3 6h18M3 12h18m-7 6h7"/></svg>
-                </button>
+        <!-- Global Wrapper -->
+        <div class="w-full max-w-screen-2xl px-8 mx-auto">
+            <!-- Navigation Bar -->
+            <div class="flex justify-between gap-4 p-4 mb-12">
+                <!-- Logo & Navigation Links Wrapper -->
+                <div class="flex items-center gap-4">
+                    <h1 class="text-4xl font-bold">Cloud Dot</h1>
+                        <!-- DektopNavigation Links -->
+                        <div class="hidden items-center gap-8 px-20 md:flex">
+                        <a href="index.html" class="text-lg font-bold text-gray-400 hover:text-gray-600">Pricing</a>
+                        <a href="about.html" class="text-lg font-bold text-gray-400 hover:text-gray-600">Features</a>
+                        <a href="projects.html" class="text-lg font-bold text-gray-400 hover:text-gray-600">Docs</a>
+                    </div>
+                </div>
+                <!-- Dektop Login & Register Wrapper -->
+                <div class="hidden items-center gap-8 md:flex">
+                    <a href="login.html" class="text-lg font-bold text-gray-400 hover:text-gray-600">Login</a>
+                    <a href="register.html" class="bg-blue-400 text-lg font-bold px-6 py-3 rounded-3xl text-white hover:text-gray-900">Register</a>
+                </div>
+                <!-- Hamburger Menu Icon -->
+                <div id="menu-toggle" class="flex md:hidden">
+                    <button class="text-black focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><path d="M3 6h18M3 12h18m-7 6h7"/></svg>
+                    </button>
+                </div>
             </div>
-
-            <!-- Desktop Navigation Links -->
-             <ul class="hidden space-x-4 sm:flex">
-                <li><a href="#" class="text-white hover:text-gray-400 transition-all duration-200 ease-in-out">Pricing</a></li>
-                <li><a href="#" class="text-white hover:text-gray-400 transition-all duration-200 ease-in-out">Features</a></li>
-                <li><a href="#" class="text-white hover:text-gray-400 transition-all duration-200 ease-in-out">Docs</a></li>
-                <li><a href="#" class="text-white hover:text-gray-400 transition-all duration-200 ease-in-out">Login</a></li>
-            </ul>
-        </nav>
-
-        <!-- Mobile Navigation Links -->
-        <nav id="mobile-menu" class="sm:hidden hidden w-full bg-slate-800 p-8 fixed top-[60px] rounded-b-lg shadow-lg z-99">
-            <ul class="flex flex-col items-center space-y-8">
-                <li><a href="#" class="text-white hover:text-gray-400 transition-all duration-200 ease-in-out">Pricing</a></li>
-                <li><a href="#" class="text-white hover:text-gray-400 transition-all duration-200 ease-in-out">Features</a></li>
-                <li><a href="#" class="text-white hover:text-gray-400 transition-all duration-200 ease-in-out">Docs</a></li>
-                <li><a href="#" class="text-white hover:text-gray-400 transition-all duration-200 ease-in-out">Login</a></li>
-            </ul>
-        </nav>
-
-        <!-- Main Content -->
-        <main class="flex flex-col items-center justify-center min-h-screen">
-            <h1 class="text-4xl font-bold text-gray-800 mb-4">Welcome to Cloud Dot</h1>
-            <p class="text-lg text-gray-500 mb-8">Your cloud solution for everything.</p>
-            <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-all duration-200 ease-in-out">Get Started</button>
-        </main>
-        <!-- Footer -->
-        <footer class="bg-blue-700 text-white p-4 text-center">
-            <p>&copy; 2025 Cloud Dot. All rights reserved.</p>
-            <p>Follow us on <a href="#" class="text-gray-400 hover:text-gray-300">Bluesky</a> and <a href="#" class="text-gray-400 hover:text-gray-300">GitHub</a></p>
-        </footer>
-        <script>
-            // JavaScript to toggle the mobile menu
-            const menuToggle = document.getElementById('menu-toggle');
-            const mobileMenu = document.getElementById('mobile-menu');
-
-            menuToggle.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            })
-        </script>
+        </div>
 
     </body>
 </html>
