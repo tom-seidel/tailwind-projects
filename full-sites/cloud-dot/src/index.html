@@ -6,7 +6,7 @@
         <link href="../dist/output.css" rel="stylesheet">
         <title>Cloud Dot</title>
     </head>
-    <body class="bg-gray-50">
+    <body class="bg-white">
         <!-- Mobile Navigation Links -->
         <div id="mobile-menu" class="hidden md:hidden absolute w-full top-[120px] z-[99]">
             <nav class="flex flex-col items-center bg-blue-400 p-8 rounded-lg shadow-lg mx-4">
@@ -14,8 +14,8 @@
                 <a href="#" class="text-xl font-bold text-gray-50 hover:text-gray-100 mb-4">Pricing</a>
                 <a href="#" class="text-xl font-bold text-gray-50 hover:text-gray-100 mb-10">Docs</a>
 
-                <a href="login.html" class="text-xl font-bold text-gray-600 hover:text-gray-700 mb-4 pt-8 border-t-1 border-gray-50 w-full text-center py-2">Login</a>
-                <a href="register.html" class="bg-gray-50 text-lg font-bold px-24 py-3 rounded-3xl text-gray-800 hover:bg-gray-100">Register</a>
+                <a href="login.html" class="text-xl font-bold text-gray-700 hover:text-gray-700 mb-4 pt-8 border-t-1 border-gray-50 w-full text-center py-2">Login</a>
+                <a href="register.html" class="bg-gray-50 text-lg font-bold px-24 py-3 rounded-3xl text-orange-400 hover:bg-gray-100">Register</a>
             </nav>
         </div>
         <!-- Navigation Wrapper -->
@@ -48,21 +48,55 @@
         <!-- Hero Section Wrapper -->
         <section class="w-full max-w-screen-2xl mx-auto">
             <!-- Hero Section Content Wrapper -->
-            <div class="flex flex-col-reverse md:flex-row justify-between items-center py-4 px-8">
+            <div class="flex flex-col-reverse md:flex-row justify-between items-center pt-4 px-8">
                 <!-- Hero Section Left Content -->
                 <div class="flex flex-col items-center py-6 md:py-12 md:items-start">
-                    <h1 class="text-5xl lg:text-6xl text-left font-bold text-gray-800 pt-8">Welcome to</h1>
-                    <h1 class="text-5xl lg:text-6xl text-left font-bold text-gray-800 mb-4">Cloud Dot</h1>
-                    <p class="text-lg lg:text-xl font-bold text-left text-gray-600 mb-8">Your cloud storage solution</p>
+                    <h1 class="text-6xl md:text-4xl lg:text-6xl text-left font-bold text-gray-800 pt-8">Welcome to</h1>
+                    <h1 class="text-6xl md:text-4xl lg:text-6xl text-left font-bold text-blue-400 mb-4">Cloud Dot</h1>
+                    <p class="text-lg md:text-lg lg:text-xl font-bold text-left text-gray-600 mb-8">Your cloud storage solution</p>
                     <a href="register.html" class="bg-blue-400 text-xl lg:text-2xl font-bold px-6 py-3 rounded-3xl text-white hover:bg-blue-500">Get Started</a>
                 </div>
                 <!-- Hero Section Right Content -->
                 <div class="flex justify-end items-center">
                     <!-- SVG Image -->
-                    <img src="../img/hero.svg" alt="Cloud Storage" class="w-60 sm:w-80 md:w-[400px] lg:w-[600px] xl:w-[850px] h-auto">
+                    <img src="../img/hero.svg" alt="Cloud Storage" class="w-60 sm:w-80 md:w-[450px] lg:w-[600px] xl:w-[850px] h-auto">
                 </div>
             </div>
         </section>
+
+        <!-- Features Section BG-Wrapper -->
+        <div class="bg-gray-100">
+            <!-- Features Section Wrapper -->
+            <section class="w-full max-w-screen-2xl mx-auto py-32 px-8">
+                <h2 class="text-5xl lg:text-6xl text-center font-bold text-gray-800 mb-24">Features</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="flex flex-col items-center">
+                    <div class="bg-blue-400 p-4 rounded-full mb-8">
+                        <!-- Icon -->
+                        <img src="../img/secure.svg" alt="Secure Storage" class="w-32 h-32">
+                    </div>
+                    <h3 class="text-3xl md:text-xl lg:text-2xl text-center font-bold text-gray-700 mb-4">Secure Storage</h3>
+                    <p class="text-center text-lg text-gray-600">Top-level encryption keeps your files safe and sound.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                    <div class="bg-blue-400 p-4 rounded-full mb-8">
+                        <!-- Icon -->
+                        <img src="../img/access.svg" alt="Secure Storage" class="w-32 h-32">
+                    </div>
+                    <h3 class="text-3xl md:text-xl lg:text-2xl font-bold text-center text-gray-700 mb-4">Instant Access</h3>
+                    <p class="text-center text-lg text-gray-600">Access your files from anywhere, anytime, on any device.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                    <div class="bg-blue-400 p-4 rounded-full mb-8">
+                        <!-- Icon -->
+                        <img src="../img/colab.svg" alt="Secure Storage" class="w-32 h-32">
+                    </div>
+                    <h3 class="text-3xl md:text-xl lg:text-2xl font-bold text-center text-gray-700 mb-4">Easy Collaboration</h3>
+                    <p class="text-center text-lg text-gray-600">Share and collaborate with your team effortlessly.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
 
         <script src="../js/index.js"></script>
     </body>
