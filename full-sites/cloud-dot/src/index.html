@@ -8,10 +8,10 @@
     </head>
     <body class="bg-gray-50">
         <!-- Mobile Navigation Links -->
-        <div id="mobile-menu" class="hidden md:hidden fixed w-full top-[120px] z-[99]">
+        <div id="mobile-menu" class="hidden md:hidden absolute w-full top-[120px] z-[99]">
             <nav class="flex flex-col items-center bg-blue-400 p-8 rounded-lg shadow-lg mx-4">
+                <a href="#" class="text-xl font-bold text-gray-50 hover:text-gray-100 mb-4">Features</a>                
                 <a href="#" class="text-xl font-bold text-gray-50 hover:text-gray-100 mb-4">Pricing</a>
-                <a href="#" class="text-xl font-bold text-gray-50 hover:text-gray-100 mb-4">Features</a>
                 <a href="#" class="text-xl font-bold text-gray-50 hover:text-gray-100 mb-10">Docs</a>
 
                 <a href="login.html" class="text-xl font-bold text-gray-600 hover:text-gray-700 mb-4 pt-8 border-t-1 border-gray-50 w-full text-center py-2">Login</a>
@@ -19,7 +19,7 @@
             </nav>
         </div>
         <!-- Navigation Wrapper -->
-        <div class="w-full max-w-screen-2xl mx-auto">
+        <section class="w-full max-w-screen-2xl mx-auto">
             <!-- Navigation Bar -->
             <div class="flex justify-between py-4 px-8">
                 <!-- Logo & Navigation Links Wrapper -->
@@ -27,8 +27,8 @@
                     <h1 class="flex-col text-md font-bold text-gray-800"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cloudy-icon lucide-cloudy w-16 h-16"><path d="M17.5 21H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/><path d="M22 10a3 3 0 0 0-3-3h-2.207a5.502 5.502 0 0 0-10.702.5"/></svg>Cloud Dot</h1>
                         <!-- DektopNavigation Links -->
                         <div class="hidden items-center gap-8 px-20 md:flex">
-                        <a href="index.html" class="text-lg font-bold text-gray-400 hover:text-gray-600">Pricing</a>
-                        <a href="about.html" class="text-lg font-bold text-gray-400 hover:text-gray-600">Features</a>
+                        <a href="index.html" class="text-lg font-bold text-gray-400 hover:text-gray-600">Features</a>
+                        <a href="about.html" class="text-lg font-bold text-gray-400 hover:text-gray-600">Pricing</a>
                         <a href="projects.html" class="text-lg font-bold text-gray-400 hover:text-gray-600">Docs</a>
                     </div>
                 </div>
@@ -44,9 +44,9 @@
                     </button>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Hero Section Wrapper -->
-        <div class="w-full max-w-screen-2xl mx-auto">
+        <section class="w-full max-w-screen-2xl mx-auto">
             <!-- Hero Section Content Wrapper -->
             <div class="flex flex-col-reverse md:flex-row justify-between items-center py-4 px-8">
                 <!-- Hero Section Left Content -->
@@ -59,21 +59,11 @@
                 <!-- Hero Section Right Content -->
                 <div class="flex justify-end items-center">
                     <!-- SVG Image -->
-                    <img src="../img/hero.svg" alt="Cloud Storage" class="w-60 sm:w-80 md:w-[450px] lg:w-[600px] xl:w-[850px] h-auto">
+                    <img src="../img/hero.svg" alt="Cloud Storage" class="w-60 sm:w-80 md:w-[400px] lg:w-[600px] xl:w-[850px] h-auto">
                 </div>
             </div>
-        </div>
+        </section>
 
-
-        <!-- JavaScript for Mobile Menu Toggle -->
-        <script>
-            // JavaScript to toggle the mobile menu
-            const menuToggle = document.getElementById('menu-toggle');
-            const mobileMenu = document.getElementById('mobile-menu');
-
-            menuToggle.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-        </script>
+        <script src="../js/index.js"></script>
     </body>
 </html>
