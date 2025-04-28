@@ -14,8 +14,8 @@
                 <a href="#" class="text-xl font-bold text-gray-50 hover:text-gray-100 mb-4">Features</a>                
                 <a href="#" class="text-xl font-bold text-gray-50 hover:text-gray-100 mb-4">Pricing</a>
                 <a href="#" class="text-xl font-bold text-gray-50 hover:text-gray-100 mb-10">Docs</a>
-
-                <a href="login.html" class="text-xl font-bold text-gray-700 hover:text-gray-700 mb-4 pt-8 border-t-1 border-gray-50 w-full text-center py-2">Login</a>
+                <!-- Login & Register Buttons -->
+                <a href="login.html" class="text-xl font-bold text-gray-700 hover:text-gray-700 mb-4 pt-8 border-t border-gray-50 w-full text-center py-2">Login</a>
                 <a href="register.html" class="bg-gray-50 text-lg font-bold px-24 py-3 rounded-3xl text-orange-400 hover:bg-gray-100">Register</a>
             </nav>
         </div>
@@ -74,26 +74,32 @@
                 <h2 class="text-5xl lg:text-6xl text-center font-bold text-gray-800 mb-24">Features</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                     <div class="flex flex-col items-center">
-                    <div class="bg-blue-400 p-4 rounded-full mb-8">
-                        <!-- Icon -->
-                        <img src="../img/secure.svg" alt="Secure Storage" class="w-32 h-32">
-                    </div>
-                    <h3 class="text-3xl md:text-xl lg:text-2xl text-center font-bold text-gray-700 mb-4">Secure Storage</h3>
-                    <p class="text-center text-lg text-gray-600">Top-level encryption keeps your files safe and sound.</p>
-                    </div>
-                    <div class="flex flex-col items-center">
-                    <div class="bg-blue-400 p-4 rounded-full mb-8">
-                        <!-- Icon -->
-                        <img src="../img/access.svg" alt="Secure Storage" class="w-32 h-32">
-                    </div>
-                    <h3 class="text-3xl md:text-xl lg:text-2xl font-bold text-center text-gray-700 mb-4">Instant Access</h3>
-                    <p class="text-center text-lg text-gray-600">Access your files from anywhere, anytime, on any device.</p>
+                        <div class="bg-blue-400 p-4 rounded-full mb-8">
+                            <div class="bg-white p-8 rounded-full">
+                                <!-- Icon -->
+                                <img src="../img/secure.svg" alt="Secure Storage" class="w-20 h-20 sm:w-24 sm:h-24">
+                            </div>
+                        </div>
+                        <h3 class="text-3xl md:text-xl lg:text-2xl text-center font-bold text-gray-700 mb-4">Secure Storage</h3>
+                        <p class="text-center text-lg text-gray-600">Top-level encryption keeps your files safe and sound.</p>
                     </div>
                     <div class="flex flex-col items-center">
-                    <div class="bg-blue-400 p-4 rounded-full mb-8">
-                        <!-- Icon -->
-                        <img src="../img/colab.svg" alt="Secure Storage" class="w-32 h-32">
+                        <div class="bg-blue-400 p-4 rounded-full mb-8">
+                            <div class="bg-white p-8 rounded-full">
+                                <!-- Icon -->
+                                <img src="../img/access.svg" alt="Secure Storage" class="w-20 h-20 sm:w-24 sm:h-24">
+                            </div>
+                        </div>
+                        <h3 class="text-3xl md:text-xl lg:text-2xl font-bold text-center text-gray-700 mb-4">Instant Access</h3>
+                        <p class="text-center text-lg text-gray-600">Access your files from anywhere, anytime, on any device.</p>
                     </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-blue-400 p-4 rounded-full mb-8">
+                            <div class="bg-white p-8 rounded-full">
+                                <!-- Icon -->
+                                <img src="../img/colab.svg" alt="Secure Storage" class="w-20 h-20 sm:w-24 sm:h-24">
+                            </div>
+                        </div>
                     <h3 class="text-3xl md:text-xl lg:text-2xl font-bold text-center text-gray-700 mb-4">Easy Collaboration</h3>
                     <p class="text-center text-lg text-gray-600">Share and collaborate with your team effortlessly.</p>
                     </div>
@@ -203,7 +209,9 @@
                 </div>
                 <!-- Right -->
                 <div class="flex flex-col items-center md:items-end">
-                    <p class="text-lg text-gray-400 text-center md:text-right">© 2025 Cloud Dot. All rights reserved.</p>
+                    <p class="text-lg text-gray-400 text-center md:text-right">
+                        &copy; <span id="year"></span> Cloud Dot. All rights reserved.
+                    </p>
                 </div>
             </div>
         </footer>
